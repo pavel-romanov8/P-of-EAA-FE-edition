@@ -7,11 +7,11 @@ some interpretations of patterns that can be applied on the FE as well.
 
 ## Examples
 
-Example contains 4 parts:
+Example contains 3 parts:
 
 - Pattern description (usually it is taken from the M.Fowler official site).
-- The case - short description of situation that will be modeled in the "solution" section.
-- Solution - the part where we going trough business logic requirement details with code examples.
+- Solution of the problem that described in each block. F.e. we have the `readme` file for business-logic where the case for every
+pattern is described
 - Drawbacks - possible drawbacks of usage.
 
 I'm not trying to be 100% accurate in each example in terms of the possible cases that we might encounter
