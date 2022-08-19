@@ -7,6 +7,7 @@
 ```ts
 class Product {
   constructor(
+    id: number,
     price: number,
     runsOutDate: Date | null,
   ) { }
@@ -18,6 +19,7 @@ class Product {
 
 class Order {
   constructor(
+    id: number,
     products: Product[],
     creationDate: Date | null,
   ) {}
