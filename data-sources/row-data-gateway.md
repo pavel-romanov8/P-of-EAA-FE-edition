@@ -8,20 +8,20 @@
 ```ts
 export class OrderGetaway {
 
-  public constructor(
+  constructor(
     private _products: Product[],
     private creationDate: Date | null,
   ) {}
 
-  public set products(products: Product[]) {
+  set products(products: Product[]) {
     return this._products = products;
   }
 
-  public get products() {
+  get products() {
     return this._products;
   }
 
-  public update() {
+  update() {
     return fetch(
 
       // The row data gateway doesn't store any IDs, we are getting it from Layer Supertype.
@@ -33,6 +33,10 @@ export class OrderGetaway {
   }
 }
 ```
+
+It might be hard to distinguish cases when it is appropriate to use _Row Data Gateway_ vs _Active Record_.
+The rule of thumb is - when we have any business logic inside of our gateway it becomes an _Active Record_,
+otherwise it still remains as _Row Data Gateway_.
 
 ## Drawbacks
 As the [table-data-gateway](./table-data-gateway.md) this pattern is pretty good when using with 
